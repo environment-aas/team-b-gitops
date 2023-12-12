@@ -25,6 +25,11 @@ spec:
     chart: swagger-petstore
     helm:
       releaseName: myservice
+      values:
+        resources:
+          requests:
+            memory: 200Mi
+            cpu: 200m      
 
   # Destination cluster and namespace to deploy the application
   destination:

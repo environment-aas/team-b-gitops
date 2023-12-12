@@ -25,6 +25,11 @@ spec:
     chart: swagger-petstore
     helm:
       releaseName: myservice
+      values:
+        resources:
+          requests:
+            memory: 200Mi
+            cpu: 200m      
 
   # Destination cluster and namespace to deploy the application
   destination:
@@ -34,6 +39,7 @@ spec:
     name: non-prod
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
     namespace: myservice-qa
+    
 
   # Sync policy
   syncPolicy:
