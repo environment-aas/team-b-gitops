@@ -25,7 +25,7 @@ spec:
     chart: swagger-petstore
     helm:
       releaseName: myservice
-      values:
+      values: |
         resources:
           requests:
             memory: 200Mi
