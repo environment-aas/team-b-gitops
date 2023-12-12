@@ -20,9 +20,9 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://evry-ace.github.io/helm-charts/  # Can point to either a Helm chart repo or a git repo.
-    targetRevision: 1.2.2  # For Helm, this refers to the chart version.
-    chart: istio-bookinfo
+    repoURL: https://charts.securecodebox.io/  # Can point to either a Helm chart repo or a git repo.
+    targetRevision: 4.3.0  # For Helm, this refers to the chart version.
+    chart: swagger-petstore
     helm:
       releaseName: myservice
 
